@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="GoldenCities.RegisterActivity"
+    BackgroundColor="Teal">
+    <ContentPage.Content>
+
+     <StackLayout
+            VerticalOptions="StartAndExpand"
+            Padding="5" >
+
+        <Label
+            Text="The Golden City"
+            TextColor="Yellow"
+            FontSize="35"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="CenterAndExpand"/>
+
+            
+        <StackLayout Orientation="Horizontal">
+            <Entry
+                x:Name="Frist_Name_Entry"
+                Placeholder="First Name"
+
+                TextChanged="Handle_TextChanged"
+                Completed="Handle_Completed"/>
+                
+            <Entry
+                x:Name="Last_Name_Entry"
+                Placeholder="Last Name"
+                TextChanged="Handle_TextChanged"
+                Completed="Handle_Completed"/>
+
+        </StackLayout>
+
+               
+
+         <Entry
+            x:Name="DOF"
+            Placeholder="MM/DD/YYYY"
+            TextChanged="Handle_TextChanged_Dof"
+            Completed="Handle_Completed_Dof"/>
+            
+        <Entry
+            x:Name="Email_Entry"
+            Placeholder="Email"
+            TextChanged="Handle_TextChanged"
+            Completed="Handle_Completed"/>
+            
+        <Entry
+            x:Name="Username_Entry"
+            Placeholder="Username"
+            TextChanged="Handle_TextChanged"
+                Completed="Handle_Completed"
+            />
+            
+        <Entry
+            x:Name="Password_Entry"
+            Placeholder="Password"
+            IsPassword="true"
+            Completed="Handle_Completed_Password"/>
+            
+        <Entry
+            x:Name="ConfirmPassword_Entry"
+            Placeholder="ConfirmPassword"
+            IsPassword="true"
+            Completed="Handle_Completed_Confirm"/>
+             
+         <Label
+            Text="Address (optional)"/>
+            
+         <Editor
+                x:Name="Address_Entry"/>
+
+          <Button 
+                Text="Register"
+                BackgroundColor="Silver"
+                Clicked="Handle_Clicked"/> 
+
+      </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

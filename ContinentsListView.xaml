@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:GoldenCities"
+    x:Class="GoldenCities.ContinentsListView"
+    Padding="20,20,20,0"
+    BackgroundImage="Globe.png"
+
+    >
+    <ContentPage.Content>
+        
+    <StackLayout>
+        
+        <Grid   x:Name="HeaderGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="*" />
+           <RowDefinition
+                Height="130" />      
+        </Grid.RowDefinitions> 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="*"
+                />
+             <ColumnDefinition
+                Width="2*"
+                />
+             <ColumnDefinition
+                Width="*"
+                />
+
+        </Grid.ColumnDefinitions>
+            <Label
+                Text="Pick a Continent"
+                TextColor="Olive"
+                Font="Bold"
+                BackgroundColor="Black"
+                FontSize="21"
+                Grid.Row="0"
+                Grid.Column="1"
+               HorizontalTextAlignment="Center"
+            />
+
+        </Grid>
+        <Grid x:Name = "CenterGrid">
+
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+                <RowDefinition
+                    Height="*"
+                />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*"
+                />
+                <ColumnDefinition
+                    Width="2*"
+                />
+
+                <ColumnDefinition
+                    Width="*"
+                />
+                
+            </Grid.ColumnDefinitions>
+
+
+       <Button
+            Text="North America"
+            TextColor="Gold"
+             Font="Bold"
+            Grid.Row="0"
+            Grid.Column="1"
+            Clicked="HandleClickedNA"
+            BorderColor="Red"
+            BackgroundColor="Blue"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="South America"
+            TextColor="Gold"
+
+             Font="Bold"
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="HandleClickedSA"
+            BorderColor="Red"
+             BackgroundColor="Blue"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="Europe"
+            TextColor="Gold"
+                     Font="Bold"
+            Grid.Row="2"
+            Grid.Column="1"
+            Clicked="HandleClickedEUR"
+             BackgroundColor="Blue"
+            BorderColor="Red"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="Africa"
+             TextColor="Gold"
+                     Font="Bold"
+             Grid.Row="3"
+             Grid.Column="1"
+             Clicked="HandleClickedAF"
+                     BackgroundColor="Blue"
+            BorderColor="Red"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="Asia"
+             TextColor="Gold"
+                     Font="Bold"
+             Grid.Row="4"
+             Grid.Column="1"
+             Clicked="HandleClickedAS"
+                     BackgroundColor="Blue"
+            BorderColor="Red"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="Australia/Oceania"
+             TextColor="Gold"
+                     Font="Bold"
+             Grid.Row="5"
+             Grid.Column="1"
+             Clicked="HandleClickedAUS"
+            BorderColor="Red"
+                     BackgroundColor="Blue"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+        <Button
+            Text="Antartica"
+             TextColor="Gold"
+                     Font="Bold"
+             Grid.Row="6"
+             Grid.Column="1"
+             Clicked="HandleClickedANT"
+            BorderColor="Red"
+                     BackgroundColor="Blue"
+            BorderWidth="2"
+            BorderRadius="10"
+        />
+
+
+
+            
+        </Grid>
+
+
+        
+
+    </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="GoldenCities.LoginPage"
+    BackgroundColor="Teal"
+    >
+  
+    <RelativeLayout>
+
+
+        
+    <Image Source="FutureCity.png" Opacity="0.2" HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+    <Grid RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+    <StackLayout 
+                Margin="80"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="StartAndExpand">
+
+    <Label Text="The Golden City"
+           TextColor="Yellow"
+           FontSize="30"
+                />
+
+     </StackLayout>
+
+            
+      <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label x:Name = "Lbl_Username" Text="Username" />
+            <Entry x:Name = "Entry_Username" Placeholder="Username"/>
+            <Label x:Name = "Lbl_Password" Text="Password" />
+            <Entry x:Name = "Entry_Password" Placeholder="Password"/>
+
+            <Button TextColor="Yellow" Font="24"
+                Text="Sign_In" Clicked="SignInProcedure" /> 
+             
+        </StackLayout>
+    </Grid>
+  </RelativeLayout>
+      
+    
+</ContentPage>

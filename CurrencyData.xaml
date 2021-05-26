@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="GoldenCities.CurrencyData">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+       </Grid.ColumnDefinitions>
+
+        
+        <StackLayout
+            Padding="0, 20, 0, 0"
+            Grid.ColumnSpan="2">
+            
+          <Label
+            Text="Currency Exchange Status" 
+            HorizontalTextAlignment="Center"
+            />
+
+            <Picker
+                x:Name="Selector"
+                Title="Country"
+                TextColor="Blue"
+                SelectedIndexChanged="Handle_SelectedIndexChanged"
+                />
+
+                
+            <Button
+            Text="Check Status"
+             Clicked="Handle_ClickedCurrency"
+           />
+
+            <Label
+                HorizontalOptions="Center"
+                x:Name = "Source"
+                Text="Source"/>
+            </StackLayout>
+
+        <StackLayout
+            Grid.Column="0"
+            Grid.Row="1">
+            <Label
+             x:Name="Quotes"
+                Text="Country: "/>
+            
+        </StackLayout>
+        
+        <StackLayout
+            Grid.Row="1"
+            Grid.Column="1">
+           <Label
+                x:Name="amount"
+                Text="Currency: "/>
+            
+         </StackLayout>
+        </Grid>
+</ContentPage>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:GoldenCities" 
+    x:Class="GoldenCities.GoldenCitiesPage"
+   BackgroundImage="GoldCity.png"
+   
+    >
+
+    <Grid
+        x:Name="ButtonsGrid"
+        RowSpacing="1"
+        ColumnSpacing="1"
+        >
+      <Grid.RowDefinitions>
+            <RowDefinition
+                Height="2*"
+            />
+            <RowDefinition
+                Height="*" 
+            />
+            <RowDefinition
+                Height="*"
+            />
+            <RowDefinition
+                Height="*"
+            />
+            <RowDefinition
+                Height="*" 
+            />
+            <RowDefinition
+                Height="*"
+            />
+            <RowDefinition
+                Height="*"
+            />
+            <RowDefinition
+                Height="*" 
+            />
+            <RowDefinition
+                Height="*"
+            />
+
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="*"
+            />
+            <ColumnDefinition
+                Width="*"
+            />
+            <ColumnDefinition
+                Width="*"
+            />
+            <ColumnDefinition
+                Width="*"
+            />
+            <ColumnDefinition
+                Width="*"
+            />
+
+     </Grid.ColumnDefinitions>
+       
+    
+    <StackLayout 
+            Padding="0,20,0,0"
+            Grid.Row="0"
+            Grid.ColumnSpan="5"
+
+            >
+
+
+            
+        
+	<Label 
+    Text="Welcome to the Golden City." 
+    VerticalOptions="Start" 
+    HorizontalOptions="Center"
+    FontSize="24"
+    TextColor="Blue"
+    BackgroundColor="Gold"
+   
+        />
+
+            
+      
+ 
+         </StackLayout>
+
+
+
+        
+
+
+         <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Text="1st time users, click on guests"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center"
+            FontSize="24"
+            TextColor="Gold"
+            BackgroundColor="Blue"
+        />
+
+
+         <StackLayout 
+            Grid.Row="7"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="5"
+            BackgroundColor="Black"
+            >
+
+        </StackLayout>
+
+      <Button 
+          Grid.Row="7"
+          Grid.Column="1"
+          Text="Login"
+          BorderWidth="1"
+          BackgroundColor="Silver"
+          Clicked="Handle_ClickedLogin" 
+
+        />
+
+     <Button 
+          Grid.Row="7"
+          Grid.Column="2"
+          Text="Register"
+          BorderWidth="1"
+          BackgroundColor="Silver"
+          Clicked="Handle_ClickedRegister"
+
+        />
+        <Button 
+          Grid.Row="7"
+          Grid.Column="3"
+          Text="Guests"
+          BorderWidth="1"
+          BackgroundColor="Silver"
+          Clicked="Handle_ClickedContinents"
+        />
+
+        <Button
+            Grid.Row="8"
+
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Text= "Check Currency Status"
+            BackgroundColor="Silver"
+            Clicked="Handle_ClickedMoney"
+
+        />
+       
+
+       
+
+        </Grid>
+    
+</ContentPage>
